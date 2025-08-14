@@ -32,6 +32,7 @@ set(msg_files
   "msg/SensorState.msg"
   "msg/Sound.msg"
   "msg/VersionInfo.msg"
+  "msg/Goal.msg"
 )
 
 set(srv_files
