@@ -318,7 +318,10 @@ class GridMapper(LaserScanner):
                 free_index.append(self.grid_2_row_major(x, y))
             if D > 0:
                 y += yi
-                D -= 2*dx
+                D -= 2 * dx
+            D += 2 * dy
+            ctr += 1
+                # D -= 2*dx
             D += 2*dy
             ctr += 1
 
@@ -336,9 +339,9 @@ class GridMapper(LaserScanner):
             if ctr != 0:
                 free_index.append(self.grid_2_row_major(x, y))
             if D > 0:
-                y += xi
-                D -= 2*dy
-            D += 2*dx
+                x += xi
+                D -= 2 * dy
+            D += 2 * dx
             ctr += 1
     def line_diag(self, free_index: List[int], x0: int, y0: int, x1: int, y1: int)-> None:
     

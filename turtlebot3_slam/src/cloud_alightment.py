@@ -63,16 +63,17 @@ class ScanAlightment:
         reg_p2p = o3d.pipelines.registration.registration_icp(
             source, target, threshold, init_guess, 
             o3d.pipelines.registration.TransformationEstimationPointToPoint(),
-            o3d.pipelines.registration.ICPConvergenceCriterial(
-                max_iteration = self.max_iter
+            o3d.pipelines.registration.ICPConvergenceCriteria(  # Fixed typo
+                max_iteration=self.max_iter
             )  
         )
         if reg_p2p.fitness < 0.8 or reg_p2p.inlier_rmse > 0.1:  
             return False, Transform2D()
+        
         T_mat = reg_p2p.transformation
-        theta = np.arctan2(T_mat[1, 0], T_mat[0][0])
+        theta = np.arctan2(T_mat[1, 0], T_mat[0, 0])  # Fixed index
         tx, ty = T_mat[0, 3], T_mat[1, 3]
-        return True,  Transform2D((tx, ty), theta)
+        return True, Transform2D(tx, ty, theta)  # Fixed constructor call
 
 
 

@@ -20,6 +20,12 @@ def normalize_angle_pi(angle: float)->float:
 def almost_equal(a: float, b: float, tolerance: float = 1e-9)->bool:
     return abs(a - b) < tolerance
 
+def pdf_normal(x: float, var: float) -> float:
+    """Probability density function for normal distribution"""
+    if abs(var) < 1e-12:
+        return 0.0
+    return (1.0 / math.sqrt(2 * math.pi * var)) * math.exp(-0.5 * x * x / var)
+
 @dataclass
 class Twist2D:
     vx: float = 0.0
@@ -203,6 +209,8 @@ class ParticleFilter:
             self.normal_sqrd_sum_ = 0.0
             for particle in self.particle_set_:
                 particle.weight /= total_weight
+                self.normal_sqrd_sum_ += particle.weight ** 2
+                particle.weight /= total_weight
                 self.normal_sqrd_sum_ += particle.weight**2
     
     def effective_particles(self)->bool:
@@ -211,24 +219,26 @@ class ParticleFilter:
     
     def low_variance_resampling(self)->None:
         temp_particles = []
-        r = random.random() / self.num_particles_
+        r = np.random.random() / self.num_particles_
         c = self.particle_set_[0].weight
         i = 0
         for m in range(self.num_particles_):
             u = r + m / self.num_particles_
             while u > c:
                 i += 1
-                if i >= self.num_particles_:
-                    i = self.num_particles_ - 1
+                if i < len(self.particle_set_):
+                    c += self.particle_set_[i].weight
+                else:
                     break
-                c += self.particle_set_[i].weight
-            new_particle = Particle(
-                1.0/self.num_particles_,
-                self.particle_set_[i].grid,
-                self.particle_set_[i].pose
-            )
-            new_particle.prev_pose = self.particle_set_[i].prev_pose.copy()
-            temp_particles.append(new_particle)
+            
+            if i < len(self.particle_set_):
+                new_particle = Particle(
+                    1.0/self.num_particles_,
+                    self.particle_set_[i].grid,
+                    self.particle_set_[i].pose
+                )
+                new_particle.prev_pose = self.particle_set_[i].prev_pose.copy()
+                temp_particles.append(new_particle)
         
         self.particle_set_ = temp_particles
     
@@ -281,12 +291,11 @@ class ParticleFilter:
         return mu, sigma, eta
     
     def icp_init_guess(self, cur_odom: np.ndarray, prev_odom: np.ndarray)->Transform2D:
-
         dx = cur_odom[1] - prev_odom[1]
         dy = cur_odom[2] - prev_odom[2]
         dth = normalize_angle_pi(cur_odom[0] - prev_odom[0])
         c = math.cos(prev_odom[0])
-        s = math.cos(prev_odom[0])
+        s = math.sin(prev_odom[0])  # Fixed typo: was using cos
         dx_rot = c * dx + s * dy
         dy_rot = -s * dx + c * dy
 
@@ -296,12 +305,10 @@ class ParticleFilter:
         return T1.compose(T2)
 
     def get_robot_state(self)->Transform2D:
-
-        best_partile = max(self.particle_set_, key=lambda p: p.weight)
-        pose = best_partile.pose
+        best_particle = max(self.particle_set_, key=lambda p: p.weight)
+        pose = best_particle.pose
         return Transform2D(pose[1], pose[2], pose[0])
     
     def new_map(self)-> List[int]:
-        
         best_particle = max(self.particle_set_, key=lambda p: p.weight)
         return best_particle.grid.grid_map()

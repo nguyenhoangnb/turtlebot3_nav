@@ -64,11 +64,11 @@ class Transform2D:
     
     def inverse(self):
         theta_inv = normalize_angle_pi(-self.theta)
-        c = math.cos(theta_inv)
-        s = math.sin(theta_inv)
+        c = math.cos(self.theta)  # Use original theta for rotation
+        s = math.sin(self.theta)
 
-        x_inv = -(c*self.x - s*self.y)
-        y_inv = -(s*self.x + c*self.y)
+        x_inv = -(c*self.x + s*self.y)  # Fixed sign error
+        y_inv = -(-s*self.x + c*self.y)  # Fixed transformation
         return Transform2D(x_inv, y_inv, theta_inv)
     
 class LaserScanner:
