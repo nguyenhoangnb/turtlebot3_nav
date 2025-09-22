@@ -34,10 +34,11 @@ endif()
 install ( PROGRAMS
   src/fast_slam.py
   src/slam.py
-  src/cloud_alightment.py
+  src/cloud_alignment.py
   src/particle.py
   src/sensor_properties.py
   src/grid_mapper.py
+  src/rigid2D.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

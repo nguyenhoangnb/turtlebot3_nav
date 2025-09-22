@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from turtlebot3_msgs/msg/Goal.msg
+// generated code does not contain a copyright notice
+
+
+module turtlebot3_msgs {
+  module msg {
+    struct Goal {
+      int32 pose;
+
+      boolean flag;
+    };
+  };
+};

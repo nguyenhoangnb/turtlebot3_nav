@@ -1,0 +1,46 @@
+[0.070s] Invoking command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/hoang/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer
+[0.243s] -- The C compiler identification is GNU 11.4.0
+[0.527s] -- The CXX compiler identification is GNU 11.4.0
+[0.563s] -- Detecting C compiler ABI info
+[0.736s] -- Detecting C compiler ABI info - done
+[0.756s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.756s] -- Detecting C compile features
+[0.757s] -- Detecting C compile features - done
+[0.763s] -- Detecting CXX compiler ABI info
+[0.974s] -- Detecting CXX compiler ABI info - done
+[1.001s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.001s] -- Detecting CXX compile features
+[1.002s] -- Detecting CXX compile features - done
+[1.018s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.524s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.043s] -- Configuring done
+[2.061s] -- Generating done
+[2.065s] -- Build files have been written to: /home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer
+[2.076s] Invoked command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/hoang/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer
+[2.084s] Invoking command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer -- -j8 -l8
+[2.184s] Invoked command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer -- -j8 -l8
+[2.204s] Invoking command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer
+[2.266s] -- Install configuration: ""
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[2.267s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[2.268s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv
+[2.268s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[2.268s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.dsv
+[2.269s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[2.269s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[2.269s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[2.270s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.dsv
+[2.273s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv
+[2.273s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[2.273s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[2.273s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[2.273s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[2.274s] Invoked command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/hoang/turtlebot3_ws/src/build/turtlebot3_cartographer

@@ -1,0 +1,56 @@
+[0.072s] Invoking command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/hoang/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2
+[2.120s] -- The C compiler identification is GNU 11.4.0
+[2.120s] -- The CXX compiler identification is GNU 11.4.0
+[2.120s] -- Detecting C compiler ABI info
+[2.120s] -- Detecting C compiler ABI info - done
+[2.121s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.121s] -- Detecting C compile features
+[2.121s] -- Detecting C compile features - done
+[2.121s] -- Detecting CXX compiler ABI info
+[2.121s] -- Detecting CXX compiler ABI info - done
+[2.121s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.121s] -- Detecting CXX compile features
+[2.121s] -- Detecting CXX compile features - done
+[2.121s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.122s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.122s] -- Configuring done
+[2.122s] -- Generating done
+[2.122s] -- Build files have been written to: /home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2
+[2.122s] Invoked command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake /home/hoang/turtlebot3_ws/src/turtlebot3/turtlebot3_navigation2 -DCMAKE_INSTALL_PREFIX=/home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2
+[2.127s] Invoking command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2 -- -j8 -l8
+[2.213s] Invoked command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --build /home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2 -- -j8 -l8
+[2.214s] Invoking command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2
+[2.240s] -- Install configuration: ""
+[2.240s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch
+[2.241s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/launch/navigation2.launch.py
+[2.241s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map
+[2.241s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.yaml
+[2.241s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/map/map.pgm
+[2.245s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param
+[2.248s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger_cam.yaml
+[2.248s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle_pi.yaml
+[2.249s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/waffle.yaml
+[2.249s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble
+[2.249s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/burger_cam.yaml
+[2.249s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/waffle_pi.yaml
+[2.249s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/waffle.yaml
+[2.250s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/humble/burger.yaml
+[2.252s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/param/burger.yaml
+[2.252s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz
+[2.252s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation2
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation2
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.sh
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/ament_prefix_path.dsv
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.sh
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/environment/path.dsv
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.bash
+[2.253s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.sh
+[2.257s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.zsh
+[2.257s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/local_setup.dsv
+[2.257s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.dsv
+[2.257s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/ament_index/resource_index/packages/turtlebot3_navigation2
+[2.263s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config.cmake
+[2.263s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/cmake/turtlebot3_navigation2Config-version.cmake
+[2.263s] -- Installing: /home/hoang/turtlebot3_ws/src/install/turtlebot3_navigation2/share/turtlebot3_navigation2/package.xml
+[2.331s] Invoked command in '/home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hoang/turtlebot3_ws/install/turtlebot3_teleop:/home/hoang/turtlebot3_ws/install/turtlebot3_example:/home/hoang/bumperbot_ws/install/bumperbot_py_examples:/opt/ros/humble /usr/bin/cmake --install /home/hoang/turtlebot3_ws/src/build/turtlebot3_navigation2
